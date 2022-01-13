@@ -17,9 +17,11 @@ app.post("/turnoff", function() {
 })
 
 // Created API to get the LED status
-app.get("/status", function() {
+app.get("/status", function(req, res) {
     console.log("Getting the status")
-    return ledStatus
+    res.send({
+        "status": ledStatus
+    })
 })
 
 app.listen(PORT)

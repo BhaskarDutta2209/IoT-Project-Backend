@@ -2,7 +2,7 @@ var mqtt = require('mqtt')
 const express = require('express')
 
 var app = express()
-var PORT = 6000
+var PORT = 9000
 
 var sensorData = {
   temperature: 0,
